@@ -1,0 +1,51 @@
+.about {
+    position: relative;
+    z-index: 1;
+    padding: 0 clamp(0.9375rem, -1.8841rem + 12.0388vw, 12.5625rem);
+    margin-bottom: 200px;
+
+    & .header {
+        font-size: clamp(2.5rem, 1.165rem + 5.6958vw, 8rem);;
+        color: #ffffff;
+        font-weight: 400;
+        line-height: clamp(2.5rem, 1.165rem + 5.6958vw, 8rem);;
+        letter-spacing: 0%;
+        width: 10vw;
+    }
+
+    & .content {
+        font-size: clamp(0.875rem, 0.693rem + 0.7767vw, 1.625rem);
+        font-family: Poppins;
+        color: #ffffff;
+        font-weight: 300;
+        letter-spacing: 0%;
+        text-align: start;
+        width: 50vw;
+        margin-top: 32px;
+    }
+
+    & .card {         
+        font-size: clamp(0.875rem, 0.693rem + 0.7767vw, 1.625rem);
+        font-family: Poppins;
+        color: #ffffff;
+        font-weight: 300;
+        letter-spacing: 0%;
+        text-align: center;
+        padding: 
+            clamp(1.875rem, 1.6019rem + 1.165vw, 3rem)
+            clamp(0.9375rem, -1.0801rem + 8.6084vw, 9.25rem);
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin-top: clamp(2.5rem, 1.6657rem + 3.5599vw, 5.9375rem);
+        
+    }
+}
+
+@media(max-width:960px) {
+    .about {
+        & .content {
+            width: 100%;
+        }
+        margin-bottom: clamp(4rem, 1.9369rem + 8.8026vw, 12.5rem);;
+    }
+}

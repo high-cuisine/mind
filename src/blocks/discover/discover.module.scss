@@ -1,0 +1,91 @@
+.discover {
+    padding: 0 clamp(0.9375rem, -1.8841rem + 12.0388vw, 12.5625rem);
+    text-align: start;
+    margin-top: clamp(4rem, 2.5437rem + 6.2136vw, 10rem);
+
+    & .header {
+        font-size: clamp(2.5rem, 1.165rem + 5.6958vw, 8rem);
+        font-family: Poppins;
+        color: #222222;
+        font-weight: 400;
+        line-height: clamp(2.5rem, 1.165rem + 5.6958vw, 8rem);;
+        letter-spacing: 0%;
+    }
+
+    & .content {
+        font-size: 24px;
+        font-family: Inter;
+        color: #6c6c6c;
+        font-weight: 300;
+        letter-spacing: 0%;
+        margin-top: clamp(1rem, 0.7573rem + 1.0356vw, 2rem);;
+    }
+
+    & .cards {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
+        margin-top: clamp(2.5rem, 1.8932rem + 2.589vw, 5rem);
+
+        & .card {
+            padding: 
+                    clamp(2rem, 1.8483rem + 0.6472vw, 2.625rem) 
+                    clamp(0.75rem, 0.568rem + 0.7767vw, 1.5rem);
+            border: 1px solid #CACACA;
+            border-radius: 15px;
+
+            & .cardUpContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #000;
+                
+            }
+
+            & .cardLink {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                gap: 20px;
+                text-decoration: none;
+            }
+            
+
+            & .cardHeader {
+                font-size: clamp(2.5rem, 2.1359rem + 1.5534vw, 4rem);
+                font-family: Poppins;
+                color: #222222;
+                font-weight: 600;
+                line-height: 48px;
+                letter-spacing: 0%;
+            }
+
+            & .cardContent {
+                font-size: clamp(1.125rem, 1.034rem + 0.3883vw, 1.5rem);
+                font-family: Inter;
+                color: #222222;
+                font-weight: 300;
+                letter-spacing: 0%;
+            }
+
+            & .iconContainer {
+                display: flex;
+                width: 100%;
+                justify-content: end;
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px) {
+    .discover {
+        & .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
